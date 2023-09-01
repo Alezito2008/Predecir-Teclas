@@ -1,4 +1,4 @@
-# Predecir Teclas
+# **Predecir Teclas**
 ## Funcionamiento
 IA hecha en python que predice las próximas teclas que vas a tocar (flecha izquierda o flecha derecha)
 ## Cómo funciona
