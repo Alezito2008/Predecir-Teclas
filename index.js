@@ -42,6 +42,8 @@ function handlePress(key) {
             prediction = findNext(lastKeys)
         }
         lastKeys.shift()
+    } else {
+        prediction = ['L', 'R'].random()
     }
 
     if (gameOver) {
