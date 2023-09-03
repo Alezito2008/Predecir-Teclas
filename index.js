@@ -5,7 +5,7 @@ var prediction = ''
 var persona = 0
 var maquina = 0
 
-var maxPoints = 5
+var maxPoints = 50
 var gameOver = false
 
 Array.prototype.random = function () {
