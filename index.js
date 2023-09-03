@@ -14,22 +14,20 @@ Array.prototype.random = function () {
 
 // Detectar teclas
 document.addEventListener('keyup', (e) => {
-    if (!gameOver) {
-        switch (e.key) {
-            case 'ArrowRight':
-                handlePress('R')
-                break
-            case 'ArrowLeft':
-                handlePress('L')
-                break
-        }
+    switch (e.key) {
+        case 'ArrowRight':
+            handlePress('R')
+            break
+        case 'ArrowLeft':
+            handlePress('L')
+            break
     }
 })
 
 function handlePress(key) {
     // Sumar los puntos
     prediction === key ? maquina++ : persona++
-    updatePoints()
+    if (!gameOver) { updatePoints() }
 
     // Detectar ganador
     persona === maxPoints || maquina === maxPoints ? gameOver = true : void(0)
